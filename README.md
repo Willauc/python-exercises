@@ -1,8 +1,13 @@
 # python-exercises
-Une collection d'exercices Python que j'ai réalisés pour m'entraîner et progresser
-en programmation.
 
-Dans le dossier CompletePythonMasteryMoshExercises se trouve les exercises du cours suivant:
-    https://codewithmosh.com/p/python-programming-course-beginners
+🐍 Collection d'exercices Python
+Une collection d’exercices Python que j’ai réalisés pour m’entraîner et progresser en programmation.
 
-Aucune ligne de code na ete produite par de AI.
+📘 CompletePythonMasteryMoshExercises
+Ce dossier contient les exercices issus du cours suivant :
+👉 Complete Python Programming (Code with Mosh)
+
+🧪 Diver
+Ce dossier contient divers exercices générés par ChatGPT, que j’ai choisis pour m’entraîner davantage sur des aspects variés de Python.
+
+⚠️ Tous les exercices ont été entièrement codés par moi. Aucune ligne de code n’a été générée automatiquement par une intelligence artificielle.
