@@ -3,8 +3,10 @@
 # Description :  Générer un mot de passe aléatoire selon des critères (longueur, majuscules, chiffres, symboles).
 #                modules standard (random, string), fonctions.
 #                Interface utilisateur avec Tkinter ou CLI.
-import password_generator
 import tkinter as tk
+
+import password_generator
+
 
 class MyGui:
     def __init__(self):
@@ -22,7 +24,7 @@ class MyGui:
         self.password_afficheur.insert(0, self.placeholder)
         self.password_afficheur.pack(padx=5, pady=10)
 
-        self.size_val= tk.IntVar()
+        self.size_val = tk.IntVar()
         self.size_check = tk.Spinbox(self.root, from_=1, to=30, width=5, textvariable=self.size_val)
         self.size_check.pack()
 
@@ -31,14 +33,16 @@ class MyGui:
         self.digit_check.pack()
 
         self.uppercase_val = tk.BooleanVar()
-        self.uppercase_check = tk.Checkbutton(self.root, text='Uppercase?', font=('Arial', 12), variable=self.uppercase_val)
+        self.uppercase_check = tk.Checkbutton(self.root, text='Uppercase?', font=('Arial', 12),
+                                              variable=self.uppercase_val)
         self.uppercase_check.pack()
 
         self.special_val = tk.BooleanVar()
-        self.special_chack = tk.Checkbutton(self.root, text='Caractere special?', font=('Arial', 12), variable=self.special_val)
+        self.special_chack = tk.Checkbutton(self.root, text='Caractere special?', font=('Arial', 12),
+                                            variable=self.special_val)
         self.special_chack.pack()
 
-        self.bouton = tk.Button(self.root, text='Generate', command= self.generate)
+        self.bouton = tk.Button(self.root, text='Generate', command=self.generate)
         self.bouton.pack(padx=5, pady=10)
 
         self.root.mainloop()
@@ -53,5 +57,6 @@ class MyGui:
         else:
             self.password_afficheur.delete(0, tk.END)
             self.password_afficheur.insert(0, password)
+
 
 MyGui()

@@ -4,22 +4,21 @@
 #                   et si divisible par 3 et 5 retourne fizz_buzz. sinon retroune le int entré
 
 def fizz_buzz(nombre):
-    if nombre % 3 == 0 and nombre % 5 == 0 :
+    if nombre % 3 == 0 and nombre % 5 == 0:
         return "FizzBuzz"
-    if nombre % 3 == 0 :
+    if nombre % 3 == 0:
         return "Fizz"
-    if nombre % 5 == 0 :
+    if nombre % 5 == 0:
         return "Buzz"
     return nombre
 
 
-while True :
-    try :
+while True:
+    try:
         nombre = int(input("Enter nombre (-1 pour quitter) : "))
-    except ValueError :
+    except ValueError:
         print("Erreur : entrer un nombre entier.")
-    else :
+    else:
         if nombre == -1:
             break
         print(fizz_buzz(nombre))
-

@@ -3,14 +3,15 @@
 # Description : Générer tous les nombres premiers jusqu’à n et les afficher dans une grille (ex: 10x10).
 #               Affichage graphique avec matplotlib ou pygame.
 
-def est_premier (nombre):
+def est_premier(nombre):
     if nombre < 2:
         return False
 
-    for n in range(2, int((nombre/2)+1)):
+    for n in range(2, int((nombre / 2) + 1)):
         if nombre % n == 0:
             return False
     return True
+
 
 def nombres_premier(limite):
     progres = 2
@@ -19,9 +20,10 @@ def nombres_premier(limite):
         if est_premier(progres):
             lst_nbr_premier.append(progres)
             progres += 1
-        else :
+        else:
             progres += 1
     return lst_nbr_premier
+
 
 def afficher_nombre_premier_console(lst_premier, limite_colone):
     present_colone = 1
@@ -33,17 +35,13 @@ def afficher_nombre_premier_console(lst_premier, limite_colone):
             if longeur == 0:
                 print("|")
             present_colone += 1
-        else :
-            print("|", lst_premier.pop(0) , end='|\n')
-            present_colone =1
+        else:
+            print("|", lst_premier.pop(0), end='|\n')
+            present_colone = 1
             print("----" * limite_colone)
             longeur -= 1
 
+
 afficher_nombre_premier_console(nombres_premier(1000), 10)
 
-#def afficher_nombre_premier_graphique
-
-
-
-
-
+# def afficher_nombre_premier_graphique

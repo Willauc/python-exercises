@@ -27,7 +27,6 @@ def calcule(equation):
     gauche = int(operante_gauche)
     droite = int(operante_droite)
 
-
     if operateur == "+":
         return gauche + droite
     elif operateur == "-":

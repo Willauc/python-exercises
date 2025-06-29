@@ -6,7 +6,8 @@
 #               Ajouter une interface CLI ou utiliser argparse.
 import sys
 
-#lst_anagrammes = ["chien", "niche", "chein", "hello", "ohlle", "montreal", "MONTREAL   "]
+
+# lst_anagrammes = ["chien", "niche", "chein", "hello", "ohlle", "montreal", "MONTREAL   "]
 
 def anagram_grouping(lst_anagrammes):
     lst_anagrammes_groupe = []
@@ -16,11 +17,11 @@ def anagram_grouping(lst_anagrammes):
         mot_placer = False
 
         for lst_anagramme in lst_anagrammes_groupe:
-            premier_mot = sorted(lst_anagramme[0].lower().replace(" ",""))
+            premier_mot = sorted(lst_anagramme[0].lower().replace(" ", ""))
             if premier_mot == anagram_trier:
                 dejas_present = False
                 for mot in lst_anagramme:
-                    if mot.lower().replace(" ","") == anagram_mod:
+                    if mot.lower().replace(" ", "") == anagram_mod:
                         dejas_present = True
                         mot_placer = True
 
@@ -34,11 +35,6 @@ def anagram_grouping(lst_anagrammes):
 
 
 if __name__ == "__main__":
-    #print(anagram_grouping(lst_anagrammes))
+    # print(anagram_grouping(lst_anagrammes))
 
     print(anagram_grouping(sys.argv[1:]))
-
-
-
-
-

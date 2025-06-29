@@ -6,8 +6,9 @@
 import random
 import string
 
+
 def generate_password(size, special_chars, digits, uppercase):
-    if size <= 0 or size > 30 :
+    if size <= 0 or size > 30:
         raise ValueError("size must be between 1 and 30")
 
     if digits and uppercase and not special_chars:
@@ -29,6 +30,7 @@ def generate_password(size, special_chars, digits, uppercase):
 
     print(size, special_chars, digits, uppercase)
     return None
+
 
 if __name__ == '__main__':
     try:
